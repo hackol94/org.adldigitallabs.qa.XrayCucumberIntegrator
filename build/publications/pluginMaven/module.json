@@ -1,0 +1,83 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.adldigitallabs.qa",
+    "module": "org.adldigitallabs.qa.xrayIntegrator",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "org.adldigitallabs.qa.xrayIntegrator-1.0.0.jar",
+          "url": "org.adldigitallabs.qa.xrayIntegrator-1.0.0.jar",
+          "size": 7492,
+          "sha512": "c9c6403509f00e33aa410d69884876bfe89333881b825aab4e046d7ab6536cc99a672449e324e3637a156927b0cd67ab2a4d8b7582516bf404125ab3cb9e2d9e",
+          "sha256": "8d7b679f3679c35389098b90c7e77bd8c3e9f4504acbcec494c5d1bbd91dad3b",
+          "sha1": "84560dfae63a65420430eb20231c59abbbfe5901",
+          "md5": "d5cc3b902b6830322643fc7052038b5c"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.fasterxml.jackson.core",
+          "module": "jackson-databind",
+          "version": {
+            "requires": "2.14.1"
+          }
+        },
+        {
+          "group": "org.apache.httpcomponents",
+          "module": "httpclient",
+          "version": {
+            "requires": "4.5.13"
+          }
+        },
+        {
+          "group": "org.apache.httpcomponents",
+          "module": "httpmime",
+          "version": {
+            "requires": "4.5.13"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "org.adldigitallabs.qa.xrayIntegrator-1.0.0.jar",
+          "url": "org.adldigitallabs.qa.xrayIntegrator-1.0.0.jar",
+          "size": 7492,
+          "sha512": "c9c6403509f00e33aa410d69884876bfe89333881b825aab4e046d7ab6536cc99a672449e324e3637a156927b0cd67ab2a4d8b7582516bf404125ab3cb9e2d9e",
+          "sha256": "8d7b679f3679c35389098b90c7e77bd8c3e9f4504acbcec494c5d1bbd91dad3b",
+          "sha1": "84560dfae63a65420430eb20231c59abbbfe5901",
+          "md5": "d5cc3b902b6830322643fc7052038b5c"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "fields": {
+      "project": {
+          "id": "10025"
+      },
+      "summary": "Cucumber new Test execution",
+      "issuetype": {
+         "id": "10542"
+      },
+      "assignee": {
+        "accountId": "5e9f7d5b85c25b0c314267bc"
+      },
+      "components" : [
+      ]
+  },
+  "xrayFields": {
+      "testPlanKey": "PBOCC-16322"
+  }
+}
