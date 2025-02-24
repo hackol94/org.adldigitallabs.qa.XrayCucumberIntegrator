@@ -1,0 +1,158 @@
+[
+  {
+    "description": "Como usuario\nQuiero poder consultar las cuentas aval para transferencias transfiya\nPara poder elegir a cual enviar dinero",
+    "elements": [
+      {
+        "description": "",
+        "id": "consulta-de-cuentas-aval-por-celular-transfiya;[be][hp]--consulta-de-cuentas-aval-por-celular-transfiya",
+        "keyword": "Escenario",
+        "line": 16,
+        "name": "[BE][HP]- Consulta de cuentas aval por celular transfiya",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 25787935
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 17,
+            "name": "Tulio ingresa al portal bancario",
+            "match": {
+              "location": "src/test/steps/api/CreditCardSteps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6142240105
+            },
+            "embeddings": [
+              {
+                "data": "eyJ1cmwiOiJodHRwczovL280OHk2N2R2MWIuZXhlY3V0ZS1hcGkudXMtZWFzdC0yLmFtYXpvbmF3cy5jb20vc3RnL2F1dGgtc2VydmljZS92MS9wdWJsaWMta2V5IiwiUmVxdWVzdCBoZWFkZXJzIjp7IngtZGV2aWNlLXNlcmlhbCI6ImRldmljZTNEIiwiT3JpZ2luIjoiaHR0cHM6Ly9wYi1zdGctb2NjaWRlbnRlLmF2YWxkaWdpdGFsbGFicy5jb20iLCJBY2NlcHQiOiJhcHBsaWNhdGlvbi9qc29uLCB0ZXh0L3BsYWluLCAqLyoiLCJDb250ZW50LVR5cGUiOiJhcHBsaWNhdGlvbi9qc29uIiwiQXV0aG9yaXphdGlvbiI6IkJhc2ljIFlYVjBhQzExYzJWeU9uUm9hWE50ZFhOMFltVmphR0Z1WjJWa0lRPT0ifSwiUmVxdWVzdCBCb2R5Ijp7fSwiUmVzcG9uc2UgSGVhZGVycyI6eyJjb250ZW50LXR5cGUiOiJhcHBsaWNhdGlvbi9qc29uO2NoYXJzZXQ9VVRGLTgiLCJjb250ZW50LWxlbmd0aCI6IjYxNiIsImNvbm5lY3Rpb24iOiJrZWVwLWFsaXZlIiwiZGF0ZSI6Ik1vbiwgMjQgRmViIDIwMjUgMTI6NDk6MDUgR01UIiwieC1hbXpuLXJlbWFwcGVkLWRhdGUiOiJNb24sIDI0IEZlYiAyMDI1IDEyOjQ5OjA1IEdNVCIsIngtYW16bi1yZXF1ZXN0aWQiOiI5OWIzZjU0YS1lOGUxLTRiZWUtOGZmNC03M2IzMzZmYTZkOTYiLCJ4LXhzcy1wcm90ZWN0aW9uIjoiMTsgbW9kZT1ibG9jayIsImFjY2Vzcy1jb250cm9sLWFsbG93LW9yaWdpbiI6IioiLCJ4LWFtem4tcmVtYXBwZWQtY29udGVudC1sZW5ndGgiOiI2MTYiLCJ4LWZyYW1lLW9wdGlvbnMiOiJERU5ZIiwieC1hbXpuLXJlbWFwcGVkLWNvbm5lY3Rpb24iOiJrZWVwLWFsaXZlIiwieC1hbXotYXBpZ3ctaWQiOiJHZldlT0ZkdUNZY0VRb0E9IiwidmFyeSI6Ik9yaWdpbiwgQWNjZXNzLUNvbnRyb2wtUmVxdWVzdC1NZXRob2QsIEFjY2Vzcy1Db250cm9sLVJlcXVlc3QtSGVhZGVycyIsImNhY2hlLWNvbnRyb2wiOiJuby1jYWNoZSwgbm8tc3RvcmUsIG1heC1hZ2U9MCwgbXVzdC1yZXZhbGlkYXRlIiwiZXhwaXJlcyI6IjAiLCJ4LWNvbnRlbnQtdHlwZS1vcHRpb25zIjoibm9zbmlmZiIsIngtYjMtdHJhY2VpZCI6IjY3YmM2YWMxMDYwMGIxYzFhMTBhNmY0MDdmMzExOTQ4IiwicHJhZ21hIjoibm8tY2FjaGUiLCJ4LWNhY2hlIjoiTWlzcyBmcm9tIGNsb3VkZnJvbnQiLCJ2aWEiOiIxLjEgMjg1NDFkMWM1YmE5NGZhNGFlN2Q2ZjdhMmMwN2Y0ZjguY2xvdWRmcm9udC5uZXQgKENsb3VkRnJvbnQpIiwieC1hbXotY2YtcG9wIjoiQ01INjgtUDMiLCJ4LWFtei1jZi1pZCI6ImNXYW5LNjliQzZYZjNRaVlwS29scUM5c0pVNmhlT05SbVlDVkZmNHNwcnRLTjh1X3Ftc2F0Zz09In0sIlJlc3BvbnNlIEJvZHkiOiJ7XCJwdWJsaWNLZXlcIjpcImdOSk1ZT09ZaFkybFprdlg3QjFTbi9HT3ozSWJ2ckx1Y1Zqay83SVhXV2xMSWN3c25iQlE3Vk1WcEVqYXJxUVQ1akdMR3U4d1UxMlFKeURpaHJHOEdLVUZiWm1JRFFuU1FoSm9vN0E4VGF4cHRuRXUvanRaVDZ5RVBwS2RYVzI5eC9oanoxdC9TS1FSZ3FkdWs0dE5FKzNDYzBucmI0MmFzWGRaTGtBdG14THh6NGdSWHFtR29HWExlSWxiK3NUQzlFTmt5NHMzcDYzQjZ0S0U0VUI4UzJNUnFLSEZUUHF3OXpoUFFSWUpXMTE0aklxODlicHpVenhJRnhGTGlZVVd2eUg0cjJjZFVkS3ZXTkRUeXVRc3lKNmxpaDNaVzlxaDllK3kxSTZZaGZoZURvRjRFUE1QQXBDTEFZOXBsUWZ4VjA2SW85WWpYYW96dUxXaUFHeUhIb3ZheGNWMDBCZWNoTUd5OTQ3MWV5NDlYajRyQ3BPT2YvVUFEajFwSU41L0IvYjBWZkhsemlkeUZ3ZURaUUl3eDlNWCtQNHFxR3NOR2NXTDk0b09RazJ4a0NKcSt6K0NkZ3Qvb3lFQXZTcVRqQ0RyWThWS2IzWG93RCthWTFFMFJlRkFMWXJyZ3p3L2ZkR1hxK2QrdjFCYzhsSUN1TWsrU1Q4MXZHVExMbWxzcVJoTTcvVXkyeUdEbzNhSkYwSzFKd2x1WTZCWUk0SGplOTBzTkN4aEYwYm1GUHFnRG5STkg1d0I5eExEbVZERlMyb1FCd0VUeXY4aFQvS3MyeGVpY0E9PVwifSIsIlN0YXR1c0NvZGUiOjIwMH0=",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "eyJ1cmwiOiJodHRwczovL280OHk2N2R2MWIuZXhlY3V0ZS1hcGkudXMtZWFzdC0yLmFtYXpvbmF3cy5jb20vc3RnL3JlY2FwdGNoYS1wYi9hdXRoZW50aWNhdG9yIiwiUmVxdWVzdCBoZWFkZXJzIjp7IngtZGV2aWNlLXNlcmlhbCI6ImRldmljZTNEIiwiT3JpZ2luIjoiaHR0cHM6Ly9wYi1zdGctb2NjaWRlbnRlLmF2YWxkaWdpdGFsbGFicy5jb20iLCJBY2NlcHQiOiJhcHBsaWNhdGlvbi9qc29uLCB0ZXh0L3BsYWluLCAqLyoiLCJDb250ZW50LVR5cGUiOiJhcHBsaWNhdGlvbi9qc29uIn0sIlJlcXVlc3QgQm9keSI6eyJwYXJhbXMiOnsibG9naW5MaXRlIjoiVTJGc2RHVmtYMS9XYXR0blBCU0N0U0xQUHA1TzArdC90alIvS2U3UzBoRT0iLCJtb25pdG9yIjoiVTJGc2RHVmtYMStXK0Y3V3lrYWRhUmtCM2llc2VmZVIxYXNVUUdlSnh6az0iLCJ1dWlkIjoiVTJGc2RHVmtYMS9BYkc0anFrdWpUQW9vQ2c4RXowT3VtNlcvZnp5cGhidkxBMjBNZStVYnQ5S0xqMVNOUkVLZiIsInRva2VuIjoiVTJGc2RHVmtYMTlnUXJKcDhyWWRDNGFSTmZDWmkvOTVYd2lZbllLdU5HSUpoZmgrSkZjR2tOc1RNYWdIYWRkSSJ9fSwiUmVzcG9uc2UgSGVhZGVycyI6eyJjb250ZW50LXR5cGUiOiJhcHBsaWNhdGlvbi9qc29uIiwiY29udGVudC1sZW5ndGgiOiIyMTYiLCJjb25uZWN0aW9uIjoia2VlcC1hbGl2ZSIsImRhdGUiOiJNb24sIDI0IEZlYiAyMDI1IDEyOjQ5OjA1IEdNVCIsImFjY2Vzcy1jb250cm9sLWFsbG93LW1ldGhvZCI6IlBPU1QsR0VULFBVVCxPUFRJT05TIiwieC1hbXpuLXJlcXVlc3RpZCI6IjllNTcyYjg5LTU1YzktNDA2ZC1iYjQ2LWY0YTAyMDg2OGU5OSIsImFjY2Vzcy1jb250cm9sLWFsbG93LW9yaWdpbiI6IioiLCJ4LWFtei1hcGlndy1pZCI6IkdmV2VTSEE1Q1ljRUJlZz0iLCJ4LWFtem4tdHJhY2UtaWQiOiJSb290PTEtNjdiYzZhYzEtMzMwYTYyMWM3ZWM2ZjEwZjdhNTllY2Q1O1NhbXBsZWQ9MTtMaW5lYWdlPTE6Mjk4MDgyNTI6MCIsIngtY2FjaGUiOiJNaXNzIGZyb20gY2xvdWRmcm9udCIsInZpYSI6IjEuMSAyODU0MWQxYzViYTk0ZmE0YWU3ZDZmN2EyYzA3ZjRmOC5jbG91ZGZyb250Lm5ldCAoQ2xvdWRGcm9udCkiLCJ4LWFtei1jZi1wb3AiOiJDTUg2OC1QMyIsIngtYW16LWNmLWlkIjoiU3ZOeV90UkpwWmVSOEFYYld2SlFsWXZsdENuSVJaa0FhaXRHTnMxVUMxU3NzbzViVlBWc2NBPT0ifSwiUmVzcG9uc2UgQm9keSI6IntcIm1lbnNhamVcIjpcInN1cGVybyBlbCBzY29yZVwiLFwicmVzcHVlc3RhXCI6XCJVMkZzZEdWa1gxL0Rna3pPNE1sRTBRYzZtVTk1eGdlenBjb0g2a2w1Q05qWkdadDlUWFZUQkprWXk1NGtvbnBZRVFtMHBXSFBCL1hkZktOai95NXpnK1hqWS9EUnVUQS9uaEMrZGN4eFNQMTRBTGdlNnFKbXRlMi9DMUNIdWxhYnJWK0RvR21xZnZNdjIxRWR4S09wUVRVSDhFdmNvcnBVdnRaSmFCWkVHVTQ9XCJ9IiwiU3RhdHVzQ29kZSI6MjAwfQ==",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "eyJ1cmwiOiJodHRwczovL280OHk2N2R2MWIuZXhlY3V0ZS1hcGkudXMtZWFzdC0yLmFtYXpvbmF3cy5jb20vc3RnL2F1dGgtc2VydmljZS92MS90b2tlbiIsIlJlcXVlc3QgaGVhZGVycyI6eyJ4LWRldmljZS1zZXJpYWwiOiJkZXZpY2UzRCIsIk9yaWdpbiI6Imh0dHBzOi8vcGItc3RnLW9jY2lkZW50ZS5hdmFsZGlnaXRhbGxhYnMuY29tIiwiQWNjZXB0IjoiYXBwbGljYXRpb24vanNvbiwgdGV4dC9wbGFpbiwgKi8qIiwiQ29udGVudC1UeXBlIjoiYXBwbGljYXRpb24vanNvbiJ9LCJSZXF1ZXN0IEJvZHkiOiJ7XCJkZXZpY2VTZXJpYWxcIjpcImRldmljZTNEXCIsXCJwYXNzd29yZFwiOlwiOjplbmNyeXB0OjppZjBMZncxYkZzREx6UG12TWxWY3Z6NlFXSytkYnBlNFlmQTJoYUt0QjU3QnkrcW9lQ05KOWxPRnlsdGJmZXNLUlFpMU56L2ZRQXZ4Q2lvM1Z3Vy9WSmd5SlNjaWttMHFCbzc0ZmZBcG8xZHRGdEVlcElvdVpSRDdtbEFRNnpNVXAxSWNsa2Zya3ZpOUVET09YeHBvcmRKK3I4SVBreCtSVEtHdjQyblBkSnpGaFIrZ3B1UkNLcUVYRWN2V3F3YUloZ0V3THkyZmpnMEkvaGxvbXB0a0xJbGY5NUlRdVN0ZHZCMXNSUXlSc1A5ZHIrbjd3bm8rbVdGTzVEczNzRDk1RmVYbE43QWJtM2ExUCt3UXhuT3A5VmloSHZGSHM2SUVDeFJKWmxxTUI5bkwxaW9SL2Z0RWpxUWxIZko4TGNrWHFNSUtEMkZnTlZibjk2cmZpOFBPU0E9PVwiLFwidG9rZW5SZWNhcHRjaGFcIjpcInJlY2FwdGNoYSBPRkYgYnkgRmVhdHVyZSBUb2dnbGVcIixcImRvY3VtZW50VHlwZVwiOlwiQ0NcIixcImRvY3VtZW50TnVtYmVyXCI6XCIxMDEwMjI1NTI5XCIsXCJ1dWlkXCI6XCJyZWNhcHRjaGEgT0ZGIGJ5IEZlYXR1cmUgVG9nZ2xlXCJ9IiwiUmVzcG9uc2UgSGVhZGVycyI6eyJjb250ZW50LXR5cGUiOiJhcHBsaWNhdGlvbi9qc29uO2NoYXJzZXQ9VVRGLTgiLCJjb250ZW50LWxlbmd0aCI6IjExOTYiLCJjb25uZWN0aW9uIjoia2VlcC1hbGl2ZSIsImRhdGUiOiJNb24sIDI0IEZlYiAyMDI1IDEyOjQ5OjA5IEdNVCIsIngtYW16bi1yZW1hcHBlZC1kYXRlIjoiTW9uLCAyNCBGZWIgMjAyNSAxMjo0OTowOSBHTVQiLCJ4LWFtem4tcmVxdWVzdGlkIjoiNTg2MTQ2MmEtZGFiNS00MzliLWJmMzYtY2I4OTk2MzAwNTZlIiwieC14c3MtcHJvdGVjdGlvbiI6IjE7IG1vZGU9YmxvY2siLCJhY2Nlc3MtY29udHJvbC1hbGxvdy1vcmlnaW4iOiIqIiwieC1hbXpuLXJlbWFwcGVkLWNvbnRlbnQtbGVuZ3RoIjoiMTE5NiIsIngtZnJhbWUtb3B0aW9ucyI6IkRFTlkiLCJ4LWFtem4tcmVtYXBwZWQtY29ubmVjdGlvbiI6ImtlZXAtYWxpdmUiLCJzZXQtY29va2llIjoiSlNFU1NJT05JRD00MzM0OUQxOEM1NjgzNzVBRjZCOEJFMTI4NjVDMTc1RTsgUGF0aD0vOyBIdHRwT25seSIsIngtYW16LWFwaWd3LWlkIjoiR2ZXZVVFekppWWNFbE9nPSIsInZhcnkiOiJPcmlnaW4sIEFjY2Vzcy1Db250cm9sLVJlcXVlc3QtTWV0aG9kLCBBY2Nlc3MtQ29udHJvbC1SZXF1ZXN0LUhlYWRlcnMiLCJjYWNoZS1jb250cm9sIjoibm8tY2FjaGUsIG5vLXN0b3JlLCBtYXgtYWdlPTAsIG11c3QtcmV2YWxpZGF0ZSIsImV4cGlyZXMiOiIwIiwieC1jb250ZW50LXR5cGUtb3B0aW9ucyI6Im5vc25pZmYiLCJ4LWIzLXRyYWNlaWQiOiI2N2JjNmFjMTBlZTBkMzExYTYxYmQzNjE1OWNiYWViNyIsInByYWdtYSI6Im5vLWNhY2hlIiwieC1jYWNoZSI6Ik1pc3MgZnJvbSBjbG91ZGZyb250IiwidmlhIjoiMS4xIDI4NTQxZDFjNWJhOTRmYTRhZTdkNmY3YTJjMDdmNGY4LmNsb3VkZnJvbnQubmV0IChDbG91ZEZyb250KSIsIngtYW16LWNmLXBvcCI6IkNNSDY4LVAzIiwieC1hbXotY2YtaWQiOiJsTVRTRmlmazRtYTlISEVzTjEyckIwRHVPbDcyeXBVdm5xVGxJYmZnQm9PT2NZU1c5N09tQ1E9PSJ9LCJSZXNwb25zZSBCb2R5Ijoie1widG9rZW5cIjpcImV5SnJhV1FpT2lKRFlVcGtjVXhxU2xkQmQwUTFlbGR4Y1hwc2QyRTFWMUV4Ym05UWRUY3JNelEyT0RjMlZuazRjVmhCUFNJc0ltRnNaeUk2SWxKVE1qVTJJbjAuZXlKemRXSWlPaUl4Y1dOak9IQTBhMlowWld0b2JHVTVjbWwyTldkeVpUZDJiaUlzSW5SdmEyVnVYM1Z6WlNJNkltRmpZMlZ6Y3lJc0luTmpiM0JsSWpvaVltSXRjR0l0YzNSbkxXRjFkR2d0WVhCcFhDOWhkWFJvYjNKcGVtRjBhVzl1SWl3aVlYVjBhRjkwYVcxbElqb3hOelF3TkRBeE16UTNMQ0pwYzNNaU9pSm9kSFJ3Y3pwY0wxd3ZZMjluYm1sMGJ5MXBaSEF1ZFhNdFpXRnpkQzB5TG1GdFlYcHZibUYzY3k1amIyMWNMM1Z6TFdWaGMzUXRNbDl2ZVVGWU1tbGFWMHdpTENKbGVIQWlPakUzTkRBME1EUTVORGNzSW1saGRDSTZNVGMwTURRd01UTTBOeXdpZG1WeWMybHZiaUk2TWl3aWFuUnBJam9pT0RZNU56RmtaREV0TURZeU1pMDBZakUxTFdGaE16Y3RPRGMzTUROaE9UUTRNMk0xSWl3aVkyeHBaVzUwWDJsa0lqb2lNWEZqWXpod05HdG1kR1ZyYUd4bE9YSnBkalZuY21VM2RtNGlmUS5BRHpiM3dqZk1NMGx1SmdxZUhMWEhwSHlXYWUzN3dXRkxGZ01qa3pXcGhCdFFTUmxHUFkxbUMtZnNuWDJKQUh5aWc5YXEwVW81LVZKRU1JVTBfQUMyTzM1aVlYdWtpdHZOal8zS09TdENoU21sTW9RcGpva0pWNEZqOHJ0MDBZNDNyTGhSQ0NsU2UxT0RmdWNYZjhPQzU0WU04S0FzYkZBUm5MVDBOa1o0NGJPTy1mZkNDM1RPcHFGOFctNENiNWllM1VyN3ZfT3dBQXZKRXh6bEJicG44ckpvZTROLWJUYUtzWUE3cXllc0YtWHd2ajZVdWFub0RDZTFuTkJwM3NnSnh4dFRZWnVPYlRyTk9KaTllcWMxOW80dEREMVFxZzNaTUlCMnJaOVFLMEdiWldGUXpWZkpXUG5YTjdRdnMtekdMdENVQnh1WlNpMHFUUjVKOXJqWmdcIixcImxhc3RBdXRoRGF0ZVwiOlwiMjAxOC0wMi0xNlQxNzowMDowMFpcIixcImN1cnJlbnREYXRlXCI6XCIyMDI1LTAyLTI0VDEyOjQ5OjA3WlwiLFwibGFzdElQQWRkcmVzc1wiOlwiMTI3LjAuMC4xXCIsXCJkZXZpY2VUb2tlbkNvb2tpZVwiOlwiUE1WNjhRZ3pVRG5iUlc2bUg3JTJCMzBLYkR0QjlHWXRnckhnQ1I3JTJCWUNTd0phUmw2V2xudnVYU25teUlJRjRRblFnYk9qNDFYQ3p1RDJqWkxQc0owaERUdmdDeVR3JTNEJTNEXCIsXCJzdWNjZXNzXCI6dHJ1ZSxcIm1pZ3JhdGVcIjpmYWxzZSxcIm1lc3NhZ2VcIjpudWxsLFwidWRzXCI6XCJCcC9BUmtPaDhTWTl5NkkxS1kxWDhnPT1cIn0iLCJTdGF0dXNDb2RlIjoyMDB9",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Cuando ",
+            "line": 18,
+            "name": "se hace una peticion para consultar si cuenta con productos aval para recibir transferencias",
+            "match": {
+              "location": "src/test/steps/api/ProductsPhone.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 728888629
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entonces ",
+            "line": 19,
+            "name": "se obtiene las cuentas aval para transferencias",
+            "match": {
+              "location": "src/test/steps/api/ProductsPhone.ts:14"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 6668293,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m401\u001b[39m\n    at Proxy.<anonymous> (/Users/brayan.martinez/Documents/occidente/bocc-pb-qa-cypress-front-qa/node_modules/playwright/lib/matchers/expect.js:227:37)\n    at World.<anonymous> (/Users/brayan.martinez/Documents/occidente/bocc-pb-qa-cypress-front-qa/src/test/steps/api/ProductsPhone.ts:16:50)"
+            },
+            "embeddings": [
+              {
+                "data": "eyJ1cmwiOiJodHRwczovL280OHk2N2R2MWIuZXhlY3V0ZS1hcGkudXMtZWFzdC0yLmFtYXpvbmF3cy5jb20vc3RnL1Byb2R1Y3RzL1Bob25lIiwiUmVxdWVzdCBoZWFkZXJzIjp7IngtZGV2aWNlLXNlcmlhbCI6ImRldmljZTNEIiwiT3JpZ2luIjoiaHR0cHM6Ly9wYi1zdGctb2NjaWRlbnRlLmF2YWxkaWdpdGFsbGFicy5jb20iLCJBY2NlcHQiOiJhcHBsaWNhdGlvbi9qc29uLCB0ZXh0L3BsYWluLCAqLyoiLCJDb250ZW50LVR5cGUiOiJhcHBsaWNhdGlvbi9qc29uIiwiQXV0aG9yaXphdGlvbiI6IkJlYXJlciBleUpyYVdRaU9pSkRZVXBrY1V4cVNsZEJkMFExZWxkeGNYcHNkMkUxVjFFeGJtOVFkVGNyTXpRMk9EYzJWbms0Y1ZoQlBTSXNJbUZzWnlJNklsSlRNalUySW4wLmV5SnpkV0lpT2lJeGNXTmpPSEEwYTJaMFpXdG9iR1U1Y21sMk5XZHlaVGQyYmlJc0luUnZhMlZ1WDNWelpTSTZJbUZqWTJWemN5SXNJbk5qYjNCbElqb2lZbUl0Y0dJdGMzUm5MV0YxZEdndFlYQnBYQzloZFhSb2IzSnBlbUYwYVc5dUlpd2lZWFYwYUY5MGFXMWxJam94TnpRd05EQXhNelEzTENKcGMzTWlPaUpvZEhSd2N6cGNMMXd2WTI5bmJtbDBieTFwWkhBdWRYTXRaV0Z6ZEMweUxtRnRZWHB2Ym1GM2N5NWpiMjFjTDNWekxXVmhjM1F0TWw5dmVVRllNbWxhVjB3aUxDSmxlSEFpT2pFM05EQTBNRFE1TkRjc0ltbGhkQ0k2TVRjME1EUXdNVE0wTnl3aWRtVnljMmx2YmlJNk1pd2lhblJwSWpvaU9EWTVOekZrWkRFdE1EWXlNaTAwWWpFMUxXRmhNemN0T0RjM01ETmhPVFE0TTJNMUlpd2lZMnhwWlc1MFgybGtJam9pTVhGall6aHdOR3RtZEdWcmFHeGxPWEpwZGpWbmNtVTNkbTRpZlEuQUR6YjN3amZNTTBsdUpncWVITFhIcEh5V2FlMzd3V0ZMRmdNamt6V3BoQnRRU1JsR1BZMW1DLWZzblgySkFIeWlnOWFxMFVvNS1WSkVNSVUwX0FDMk8zNWlZWHVraXR2TmpfM0tPU3RDaFNtbE1vUXBqb2tKVjRGajhydDAwWTQzckxoUkNDbFNlMU9EZnVjWGY4T0M1NFlNOEtBc2JGQVJuTFQwTmtaNDRiT08tZmZDQzNUT3BxRjhXLTRDYjVpZTNVcjd2X093QUF2SkV4emxCYnBuOHJKb2U0Ti1iVGFLc1lBN3F5ZXNGLVh3dmo2VXVhbm9EQ2Uxbk5CcDNzZ0p4eHRUWVp1T2JUck5PSmk5ZXFjMTlvNHRERDFRcWczWk1JQjJyWjlRSzBHYlpXRlF6VmZKV1BuWE43UXZzLXpHTHRDVUJ4dVpTaTBxVFI1SjlyalpnIiwieC1kZXZpY2UtdG9rZW4tY29va2llIjoiUE1WNjhRZ3pVRG5iUlc2bUg3JTJCMzBLYkR0QjlHWXRnckhnQ1I3JTJCWUNTd0phUmw2V2xudnVYU25teUlJRjRRblFnYk9qNDFYQ3p1RDJqWkxQc0owaERUdmdDeVR3JTNEJTNEIn0sIlJlcXVlc3QgQm9keSI6eyJQaG9uZSI6IjMyMTkyOTI0NzQiLCJHb3ZJc3N1ZUlkZW50VHlwZSI6IkNDIiwiSWRlbnRTZXJpYWxOdW0iOiIxMDEwMjI1NTI5In0sIlJlc3BvbnNlIEhlYWRlcnMiOnsiY29udGVudC10eXBlIjoiYXBwbGljYXRpb24vanNvbiIsImNvbnRlbnQtbGVuZ3RoIjoiMjEzIiwiY29ubmVjdGlvbiI6ImtlZXAtYWxpdmUiLCJkYXRlIjoiTW9uLCAyNCBGZWIgMjAyNSAxMjo0OToxMCBHTVQiLCJhY2Nlc3MtY29udHJvbC1hbGxvdy1tZXRob2QiOiJQT1NULEdFVCxPUFRJT05TIiwieC1hbXpuLXJlcXVlc3RpZCI6IjU2NDhiOTBhLTlmMDEtNGMxYy05YTNkLTA3NjRhZDUzOGI3MiIsImFjY2Vzcy1jb250cm9sLWFsbG93LW9yaWdpbiI6IioiLCJhY2Nlc3MtY29udHJvbC1hbGxvdy1oZWFkZXJzIjoiQ29udGVudC1UeXBlLCBYLUFtei1EYXRlLCBYLURldmljZS1TZXJpYWwsIFgtRGV2aWNlLVRva2VuLUNvb2tpZSwgQXV0aG9yaXphdGlvbiwgWC1BcGktS2V5LCB4LXJlcXVlc3RlZC13aXRoLCBYLUNsaWVudC1UcmFjZS1JZCwgeC14c3MtcHJvdGVjdGlvbiwgeC1mcmFtZS1vcHRpb25zLCB4LWNvbnRlbnQtdHlwZS1vcHRpb25zIiwieC1hbXotYXBpZ3ctaWQiOiJHZldlOEdNUENZY0VhNVE9IiwieC1hbXpuLXRyYWNlLWlkIjoiUm9vdD0xLTY3YmM2YWM1LTQ4ZmZiYzAxMWI0NWYzMDM0OTNlODAyZDtTYW1wbGVkPTE7TGluZWFnZT0yOmM3NDg1Y2FjOjAiLCJ4LXJxdWlkIjoiOTIyMDY4MzciLCJ4LWNhY2hlIjoiRXJyb3IgZnJvbSBjbG91ZGZyb250IiwidmlhIjoiMS4xIDI4NTQxZDFjNWJhOTRmYTRhZTdkNmY3YTJjMDdmNGY4LmNsb3VkZnJvbnQubmV0IChDbG91ZEZyb250KSIsIngtYW16LWNmLXBvcCI6IkNNSDY4LVAzIiwieC1hbXotY2YtaWQiOiJybngtUVA4Nk9xSWRQOVMtZkJMYUJZM0N6a0RMMHZDeFhZUC1wT1BEU2w2NExIR0pRZUNERXc9PSJ9LCJSZXNwb25zZSBCb2R5Ijoie1wib3JpZ2luQ29tcG9uZW50XCI6XCJiYi1wYi1zdGctY2VsbC10by1jZWxsLWdldC1wcm9kdWN0c1wiLFwiYmFja2VuZEVycm9yTWVzc2FnZVwiOlwiVGVjaG5pY2FsRXhjZXB0aW9uXCIsXCJjdXN0b21lckVycm9yTWVzc2FnZVwiOntcInRpdGxlXCI6XCJFcnJvciBUw6ljbmljb1wiLFwibWVzc2FnZVwiOlwiVW5hdXRob3JpemVkXCIsXCJhbGVydFR5cGVcIjpcIkFsZXJ0c01lc3NhZ2VzVHlwZS5JTkZPXCJ9fSIsIlN0YXR1c0NvZGUiOjQwMX0=",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 668711
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@app:Backend",
+            "line": 2
+          },
+          {
+            "name": "@layer:Backend",
+            "line": 3
+          },
+          {
+            "name": "@priority:High",
+            "line": 4
+          },
+          {
+            "name": "@regression:Yes",
+            "line": 5
+          },
+          {
+            "name": "@automation:Automation-Complete",
+            "line": 6
+          },
+          {
+            "name": "@functionality:ZONA_PUBLICA.Permitir_Inicio_de_Sesion.Validar_Segundo_Factor",
+            "line": 7
+          },
+          {
+            "name": "@PBOCC-24117",
+            "line": 14
+          },
+          {
+            "name": "@migrated",
+            "line": 15
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "consulta-de-cuentas-aval-por-celular-transfiya",
+    "line": 9,
+    "keyword": "Característica",
+    "name": "Consulta de cuentas aval por celular transfiya",
+    "tags": [
+      {
+        "name": "@app:Backend",
+        "line": 2
+      },
+      {
+        "name": "@layer:Backend",
+        "line": 3
+      },
+      {
+        "name": "@priority:High",
+        "line": 4
+      },
+      {
+        "name": "@regression:Yes",
+        "line": 5
+      },
+      {
+        "name": "@automation:Automation-Complete",
+        "line": 6
+      },
+      {
+        "name": "@functionality:ZONA_PUBLICA.Permitir_Inicio_de_Sesion.Validar_Segundo_Factor",
+        "line": 7
+      }
+    ],
+    "uri": "src/test/features/API/PENDDING_MATCH_TEST_CASE/Consulta de Celular para transferencia transfiya.feature"
+  }
+]

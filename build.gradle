@@ -1,0 +1,81 @@
+plugins {
+    id 'java-gradle-plugin'
+    id 'maven-publish'
+}
+group = 'org.adldigitallabs.qa'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+gradlePlugin {
+    plugins {
+        XrayCucumberIntegrator {
+            id = 'org.adldigitallabs.qa'
+            implementationClass = 'org.adldigitallabs.qa.XrayCucumberIntegrator'
+        }
+    }
+}
+
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+            pom {
+                name.set("XrayCucumberIntegrator")
+                description.set("xray plugin")
+                url.set("https://github.com/hackol94/org.adldigitallabs.qa.XrayCucumberIntegrator")
+                licenses {
+                    license {
+                        name.set("The Apache License, Version 2.0")
+                        url.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
+                    }
+                }
+                developers {
+                    developer {
+                        id.set("hackol94")
+                        name.set("Brayan Martinez")
+                        email.set("hackol94@gmail.com")
+                    }
+                }
+                scm {
+                    connection.set("scm:git:git://github.com/hackol94/org.adldigitallabs.qa.XrayCucumberIntegrator.git")
+                    developerConnection.set("scm:git:ssh://github.com/hackol94/org.adldigitallabs.qa.XrayCucumberIntegrator.git")
+                    url.set("https://github.com/hackol94/org.adldigitallabs.qa.XrayCucumberIntegrator")
+                }
+            }
+        }
+    }
+    repositories {
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/hackol94/org.adldigitallabs.qa.XrayCucumberIntegrator")
+            credentials {
+                username = project.findProperty("gpr.user") ?: System.getenv("GITHUB_USER")
+                password = project.findProperty("gpr.key") ?: System.getenv("GITHUB_TOKEN")
+            }
+        }
+    }
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
+}
+dependencies {
+    // Para parsear JSON con Jackson
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.14.1'
+
+    // Dependencias ya existentes...
+    implementation 'org.apache.httpcomponents:httpclient:4.5.13'
+
+    // Para construir peticiones multipart (puede requerir httpmime)
+    implementation 'org.apache.httpcomponents:httpmime:4.5.13'
+}
+
+test {
+    useJUnitPlatform()
+}
